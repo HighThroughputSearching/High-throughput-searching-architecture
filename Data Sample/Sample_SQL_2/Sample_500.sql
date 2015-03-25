@@ -40,7 +40,7 @@ finger AS (
 	CAST('2015-01-01' as varchar(15)) as fingerprint_date,
 
 	--department
-	'D_0' + CAST(
+	'0' + CAST(
 		CASE 
 			WHEN (n%500)+1 >= 1 AND (n%500)+1 <= 167 THEN 1
 			WHEN (n%500)+1 >= 168 AND (n%500)+1 <= 335 THEN 2
